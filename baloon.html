@@ -1,0 +1,24 @@
+<p>🎈</p>
+
+<script>
+  // Your code here
+
+   let p = document.querySelector('p');
+    para.style.fontSize = '24px';
+  
+    window.addEventListener("keydown", event => {
+    var size = parseInt(para.style.fontSize, 10);
+    if (event.key == "ArrowUp") {
+      size += 10;
+    } else {
+      size -= 10;      
+    }
+    p.style.fontSize = size + 'px';
+    
+    if (size > 100) {
+    	p.innerText = 'blast...';
+    } else {
+    	p.innerText = '🎈';
+    }
+  });
+</script>
