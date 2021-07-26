@@ -40,7 +40,7 @@ class Group{
       this.group = group.group;
     }
     next() {
-      //if(this.group[this.i] === undefined) return {done: true};
+      if(this.group[this.i] === undefined) return {done: true};
       let value = this.group[this.i];
       this.i += 1;
       return {value, done: false}
